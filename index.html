@@ -1,27 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-   <style type="text/tailwindcss">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/6f5ae8a4e6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
       @theme {
         --color-clifford: #da373d;
       }
     </style>
-   <link rel="stylesheet" href="style.css">
-   <title>Youtube-clone | SIMALLWORLD</title>
-</head>
-<body>
-   <div class="container">
-    <header>
-      <aside>
+    <link rel="stylesheet" href="style.css" />
+    <title>Youtube-clone | SIMALLWORLD</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <!-- Nav bar design -->
+        <nav>
+          <div class="nav-bar">
+            <!-- Left Nav -->
+            <div class="nav-left">
+              <i class="fa-solid fa-bars"></i>
+              <div class="logo">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/502px-Logo_of_YouTube_%282015-2017%29.svg.png"
+                  alt="logo"
+                />
+              </div>
+            </div>
+            <!-- Center Nav -->
+            <div class="nav-center">
+              <div class="nav-search">
+                <input type="text" placeholder="Search" />
+                <i class="fa-solid fa-search"></i>
+              </div>
+              <i class="fa-solid fa-microphone"></i>
+            </div>
+            <!-- Right Nav -->
+            <div class="nav-right">
+              <button>
+                <i class="fa-solid fa-plus"></i>
+                Create
+              </button>
+              <i class="fa-regular fa-bell"></i>
+              <i class="fa-solid fa-user-tie"></i>  
+            </div>
+          </div>
+        </nav>
+      </header>
 
-      </aside>
-      <nav>
-        
-      </nav>
-    </header>
-   </div>
-</body>
+      <main>
+        <aside>
+          
+        </aside>
+
+        <div class="tags"></div>
+
+        <div class="card-container">
+          <div class="card"></div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>

@@ -8,11 +8,11 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-      @theme {
-        --color-clifford: #da373d;
-      }
-    </style>
+    <!-- <style type="text/tailwindcss">
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+    </style> -->
     <link rel="stylesheet" href="styles.css" />
     <title>Youtube-clone | SIMALLWORLD</title>
   </head>
@@ -26,10 +26,13 @@
             <div class="nav-left">
               <i class="fa-solid fa-bars"></i>
               <div class="logo">
-                <img
+                <i class="fa-brands fa-youtube"></i>
+                <h2>YouTube</h2>
+                <sup>IN</sup>
+                <!-- <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/502px-Logo_of_YouTube_%282015-2017%29.svg.png"
                   alt="logo"
-                />
+                /> -->
               </div>
             </div>
             <!-- Center Nav -->
@@ -47,21 +50,196 @@
                 Create
               </button>
               <i class="fa-regular fa-bell"></i>
-              <i class="fa-solid fa-user-tie"></i>  
+              <i class="fa-solid fa-user-tie"></i>
             </div>
           </div>
         </nav>
       </header>
 
+      <!-- Main Section -->
       <main>
-        <aside>
+        <div class="main-container">
+          <aside>
+            <div class="aside-parent">
+              <button class="aside-button">
+                <i class="fa-solid fa-house"></i
+                ><span class="a-left">Home</span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-solid fa-circle-play"></i
+                ><span class="a-left">Sorts</span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-solid fa-plus-minus"></i
+                ><span class="a-left">Subscriptions</span>
+              </button>
+              <div class="hr"></div>
+              <button class="aside-button">
+                You<span class="a-left"
+                  ><i class="fa-solid fa-angle-right"></i
+                ></span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-solid fa-clock-rotate-left"></i
+                ><span class="a-left">History</span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-solid fa-list-check"></i
+                ><span class="a-left">Playlist</span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-solid fa-file-video"></i
+                ><span class="a-left">Your videos</span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-solid fa-graduation-cap"></i
+                ><span class="a-left">Your courses</span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-solid fa-microphone-lines"></i
+                ><span class="a-left">Your podcasts</span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-solid fa-clock"></i
+                ><span class="a-left">Watch later</span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-regular fa-thumbs-up"></i
+                ><span class="a-left">Liked videos</span>
+              </button>
+              <div class="hr"></div>
+              <h2 class="subscriptions">Subscriptions</h2>
+              <button class="aside-button-subscription">
+                <img
+                  class="subscription-icon"
+                  src="https://image.pngaaa.com/707/8482707-middle.png"
+                  alt=""
+                />
+                The Lallantop<span class="a-left"></span
+                ><i class="fa-solid fa-dna red"></i>
+              </button>
+              <button class="aside-button-subscription">
+                <img
+                  class="subscription-icon"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTWJGkldLJ_ZIq79jZTJcqKTym06qhbW5GJQ&s"
+                  alt=""
+                />
+                Intellipaat<span class="a-left"></span
+                ><i class="fa-solid fa-dna red"></i>
+              </button>
+              <button class="aside-button-subscription">
+                <img
+                  class="subscription-icon"
+                  src="https://upload.wikimedia.org/wikipedia/commons/4/41/Firstpost_logo.jpg"
+                  alt=""
+                />
+                Firstpost<span class="a-left"></span
+                ><i class="fa-solid fa-dna red"></i>
+              </button>
+              <button class="aside-button">
+                <i class="fa-solid fa-angle-down"></i
+                ><span class="a-left">Show more</span>
+              </button>
+              <div class="hr"></div>
+              <h2 class="subscriptions">Explore</h2>
+              <button class="aside-button">
+                <i class="fa-solid fa-fire"></i
+                ><span class="a-left">Trending</span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-solid fa-bag-shopping"></i
+                ><span class="a-left">Shopping</span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-solid fa-music"></i
+                ><span class="a-left">Music</span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-solid fa-clapperboard"></i
+                ><span class="a-left">Movies</span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-solid fa-tower-broadcast"></i
+                ><span class="a-left">Live</span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-brands fa-xbox"></i
+                ><span class="a-left">Gaming</span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-solid fa-newspaper"></i
+                ><span class="a-left">News</span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-solid fa-medal"></i
+                ><span class="a-left">Sports</span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-solid fa-graduation-cap"></i
+                ><span class="a-left">Courses</span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-solid fa-shirt"></i
+                ><span class="a-left">Fashion & Beauty</span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-solid fa-microphone-lines"></i
+                ><span class="a-left">Podcasts</span>
+              </button>
+              <div class="hr"></div>
+              <h2 class="subscriptions">More from YouTube</h2>
+              <button class="aside-button-youtube">
+                <img
+                  class="subscription-icon"
+                  src="https://image.pngaaa.com/707/8482707-middle.png"
+                /><span class="a-left-youtube">YouTube Premium</span>
+              </button>
+              <button class="aside-button-youtube">
+                <img
+                  class="subscription-icon"
+                  src="https://image.pngaaa.com/707/8482707-middle.png"
+                /><span class="a-left-youtube">YouTube Studio</span>
+              </button>
+              <button class="aside-button-youtube">
+                <img
+                  class="subscription-icon"
+                  src="https://image.pngaaa.com/707/8482707-middle.png"
+                /><span class="a-left-youtube">YouTube Music</span>
+              </button>
+              <button class="aside-button-youtube">
+                <img
+                  class="subscription-icon"
+                  src="https://image.pngaaa.com/707/8482707-middle.png"
+                /><span class="a-left-youtube">YouTube Kids</span>
+              </button>
+              <div class="hr"></div>
+              <button class="aside-button">
+                <i class="fa-solid fa-gear"></i
+                ><span class="a-left">Settings</span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-solid fa-flag"></i
+                ><span class="a-left">Report history</span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-solid fa-circle-question"></i
+                ><span class="a-left">Help</span>
+              </button>
+              <button class="aside-button">
+                <i class="fa-brands fa-blackberry"></i
+                ><span class="a-left">Send Feedback</span>
+              </button>
+            </div>
+          </aside>
 
-        </aside>
+          <!-- Main Right content -->
+          <div class="main-right">
+            <div class="tags"></div>
 
-        <div class="tags"></div>
-
-        <div class="card-container">
-          <div class="card"></div>
+            <div class="card-container">
+              <div class="card"></div>
+            </div>
+          </div>
         </div>
       </main>
     </div>

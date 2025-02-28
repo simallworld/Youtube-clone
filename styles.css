@@ -278,3 +278,119 @@ aside .a-left-youtube{
    font-weight: 400;
    text-align: left;
 }
+
+.main-right{
+   width: 80vw;
+   height: 100vh;
+   background-color: black;
+
+}
+
+.tags{
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+   margin-top: 20px;
+   padding: 10px;
+   /* border-bottom: 1px solid rgb(56, 56, 56); */
+   display: flex;
+   overflow-x: auto;
+   white-space: nowrap;
+   gap: 10px;
+   scrollbar-width: none;
+   -ms-overflow-style: none;
+   width: 99%;
+}
+
+.tag{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 3px 10px;
+   background-color: rgb(56, 56, 56);
+   border-radius: 5px;
+   cursor: pointer;
+   display: inline-block;
+   transition: background-color 0.3s ease;
+}
+
+.tag:hover{
+   background-color: rgb(37, 37, 37);
+}
+
+.tag-selected{
+   display: flex;
+   color: black;
+   align-items: center;
+   justify-content: center;
+   padding: 3px 10px;
+   background-color: white;
+   cursor: pointer;
+   border-radius: 5px;
+}
+
+.tag-selected:hover{
+   background-color: rgb(0, 0, 0);
+   color: white;
+   border: 2px solid white;
+   padding: 1.5px 8.5px;
+}
+
+.card-container{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   gap: 20px;
+}
+
+.card{
+   cursor: pointer;
+   padding: 8px;
+   border-radius: 10px;
+   /* background-color: white; */
+}
+.card:hover{
+   transform: scale(1.01);
+   transition: 0.2s;
+   /* background-color: white; */
+}
+
+.card img{
+   border-radius: 10px 10px 10px 10px;
+   object-fit: cover;
+}
+
+.card-tile{
+   display: flex;
+   flex-direction: row;
+   align-items: start;
+   gap: 10px;
+   justify-content: space-evenly;
+   padding: 10px 10px;
+}
+
+.card-tile img{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   margin-top: 5px;
+}
+
+.card-tile-text{
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   gap: 1px;
+   width: 100%;
+}
+
+.card-tile-text h2{
+   font-size: 16px;
+   font-weight: 600;
+}
+
+.card-tile-text p{
+   font-size: 14px;
+   font-weight: 400;
+   color: rgb(170, 170, 170);
+}
